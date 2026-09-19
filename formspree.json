@@ -50,6 +50,61 @@
           "required": true
         }
       }
+    },
+    "eventBrief": {
+      "name": "IWEP Event Brief & Logistics",
+      "actions": [
+        {
+          "type": "email",
+          "to": "info@innerwesteventphotography.com.au"
+        }
+      ],
+      "fields": {
+        "fullName": {
+          "type": "text",
+          "required": true
+        },
+        "email": {
+          "type": "email",
+          "required": true
+        },
+        "organisation": {
+          "type": "text",
+          "required": false
+        },
+        "eventDate": {
+          "type": "text",
+          "required": true
+        },
+        "venueAddress": {
+          "type": "text",
+          "required": true
+        },
+        "onSiteContactName": {
+          "type": "text",
+          "required": true
+        },
+        "onSiteContactPhone": {
+          "type": "text",
+          "required": true
+        },
+        "venueAccessNotes": {
+          "type": "text",
+          "required": false
+        },
+        "keyMomentsVips": {
+          "type": "text",
+          "required": false
+        },
+        "runSheetLink": {
+          "type": "text",
+          "required": false
+        },
+        "additionalNotes": {
+          "type": "text",
+          "required": false
+        }
+      }
     }
   }
 }

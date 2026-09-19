@@ -1,0 +1,213 @@
+---
+import Layout from "@/layouts/BaseLayout.astro";
+import Section from "@/components/Wrapper/Section.astro";
+import ContentWrapper from "@/components/Wrapper/ContentWrapper.astro";
+import Eyebrow from "@/components/Typography/Eyebrow.astro";
+import Heading from "@/components/Typography/Heading.astro";
+import Paragraph from "@/components/Typography/Paragraph.astro";
+import Form from "@/components/Form/Form.astro";
+import Input from "@/components/Form/Input.astro";
+import Textarea from "@/components/Form/Textarea.astro";
+import Button from "@/components/Button.astro";
+import { STUDIO_CONTACT } from "@/consts.ts";
+---
+
+<Layout
+  title="Event Brief & On-Site Logistics | Inner West Event Photography"
+  description="Share your event run sheet, on-site contact details, and venue access notes for upcoming event photography coverage in Sydney."
+  noindex={true}
+>
+  <Section paddingTop="medium" paddingBottom="large">
+    <ContentWrapper>
+      <div class="event-brief-container">
+        <header class="event-brief-header">
+          <Eyebrow>EVENT LOGISTICS & BRIEFING</Eyebrow>
+          <Heading tag="h1" variant="h2">Event Brief & On-Site Details</Heading>
+          <Paragraph variant="large" class="event-brief-lead">
+            Please share the key logistical details below so coverage runs smoothly on the day.
+          </Paragraph>
+          <Paragraph variant="small" class="event-brief-subtext">
+            Takes a few minutes. If you already have a prepared run sheet or schedule in Google Drive, Dropbox, or OneDrive, drop the share link below.
+          </Paragraph>
+        </header>
+
+        <Form
+          name="eventBrief"
+          projectId={STUDIO_CONTACT.formProjectId}
+          formId={STUDIO_CONTACT.eventBriefFormId}
+          successMessage="Thank you. Your event brief has been received. We will review the schedule and confirm final arrival details 48 hours prior to your event."
+          errorMessage="There was an issue submitting your brief. Please email info@innerwesteventphotography.com.au directly."
+        >
+          <div class="brief-fields-group">
+            <Heading tag="h2" variant="h4" class="brief-group-title">
+              1. Event & Booking Details
+            </Heading>
+            <div class="brief-grid-2">
+              <Input
+                label="Your Name"
+                name="fullName"
+                variant="text"
+                required
+                placeholder="Jane Smith"
+              />
+              <Input
+                label="Email Address"
+                name="email"
+                variant="email"
+                required
+                placeholder="jane@company.com"
+              />
+            </div>
+            <div class="brief-grid-2">
+              <Input
+                label="Organisation / Client"
+                name="organisation"
+                variant="text"
+                placeholder="Company or Organisation Name"
+              />
+              <Input
+                label="Event Date"
+                name="eventDate"
+                variant="text"
+                required
+                placeholder="e.g. 24 October 2026"
+              />
+            </div>
+            <Input
+              label="Venue Name & Address"
+              name="venueAddress"
+              variant="text"
+              required
+              placeholder="e.g. ICC Sydney, 14 Darling Dr, Sydney NSW 2000"
+            />
+          </div>
+
+          <div class="brief-fields-group">
+            <Heading tag="h2" variant="h4" class="brief-group-title">
+              2. On-Site Contact on the Day
+            </Heading>
+            <Paragraph variant="small">
+              The person we should phone or check in with upon arrival.
+            </Paragraph>
+            <div class="brief-grid-2">
+              <Input
+                label="On-Site Contact Name"
+                name="onSiteContactName"
+                variant="text"
+                required
+                placeholder="On-site coordinator name"
+              />
+              <Input
+                label="On-Site Contact Mobile"
+                name="onSiteContactPhone"
+                variant="phone"
+                required
+                placeholder="0412 345 678"
+              />
+            </div>
+          </div>
+
+          <div class="brief-fields-group">
+            <Heading tag="h2" variant="h4" class="brief-group-title">
+              3. Schedule, Access & Priorities
+            </Heading>
+            <Input
+              label="Run Sheet Link (Google Drive, Dropbox, OneDrive)"
+              name="runSheetLink"
+              variant="url"
+              placeholder="https://..."
+            />
+            <Textarea
+              label="Venue Access, Loading Dock & Parking Notes"
+              name="venueAccessNotes"
+              placeholder="Parking instructions, security check-in requirements, loading dock entry, or room names."
+              minLines={3}
+            />
+            <Textarea
+              label="Priority VIPs, Speakers & Must-Have Moments"
+              name="keyMomentsVips"
+              placeholder="Key speakers, VIPs, award presentations, sponsor activations, or specific group photos."
+              minLines={3}
+            />
+            <Textarea
+              label="Additional Notes or Media Restrictions"
+              name="additionalNotes"
+              placeholder="Anyone who must not be photographed, media embargoes, or any other notes."
+              minLines={3}
+            />
+          </div>
+
+          <div class="brief-submit-wrap">
+            <Button element="button" type="submit">
+              Submit Event Brief
+            </Button>
+            <Paragraph variant="small" class="brief-submit-note">
+              We will review your schedule and confirm arrival 48 hours prior to the shoot.
+            </Paragraph>
+          </div>
+        </Form>
+      </div>
+    </ContentWrapper>
+  </Section>
+</Layout>
+
+<style>
+  .event-brief-container {
+    max-width: 48rem;
+    margin-inline: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-8);
+  }
+
+  .event-brief-header {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+
+  .event-brief-lead {
+    margin-top: var(--space-2);
+  }
+
+  .event-brief-subtext {
+    color: var(--text-muted);
+  }
+
+  .brief-fields-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+    padding-top: var(--space-4);
+    border-top: var(--border-width) solid var(--border);
+  }
+
+  .brief-group-title {
+    margin-bottom: var(--space-1);
+  }
+
+  .brief-grid-2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+
+    @media (width >= 40rem) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .brief-submit-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: var(--space-3);
+    margin-top: var(--space-4);
+    padding-top: var(--space-6);
+    border-top: var(--border-width) solid var(--border);
+  }
+
+  .brief-submit-note {
+    color: var(--text-muted);
+  }
+</style>

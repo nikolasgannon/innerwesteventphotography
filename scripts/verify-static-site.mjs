@@ -92,7 +92,7 @@ assert.match(
 
 const pricingPage = readPage("/pricing/");
 assert.match(pricingPage, /id="pricing-builder"/);
-assert.match(pricingPage, /Event Photography Pricing Sydney/);
+assert.match(pricingPage, /Sydney Event Photography Pricing/);
 assert.match(pricingPage, /"@type":"BreadcrumbList"/);
 
 const activationService = readPage("/services/brand-campaigns-activations/");

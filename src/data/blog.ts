@@ -48,7 +48,7 @@ export const BLOG_POSTS: BlogPost[] = [
     summary: "What affects corporate event photography rates in Sydney, from room overlap to multi-day schedules and delivery deadlines.",
     featured: true,
     content: {
-      intro: "Corporate event photography rates in Sydney depend on schedule density, venue logistics, overlapping rooms, and delivery deadlines. For general scope and inclusions, see the <a href='/docs/pricing-and-rates-guide'>Sydney event photography pricing guide</a>, or calculate an estimate directly with the <a href='/pricing#pricing-builder'>pricing builder</a>.",
+      intro: "Corporate event photography rates in Sydney depend on schedule density, venue logistics, overlapping rooms, and delivery deadlines. For general scope and inclusions, see the <a href='/docs/pricing-and-rates-guide'>Sydney event photography pricing and rates guide</a>, or calculate an estimate directly with the <a href='/pricing#pricing-builder'>interactive rate builder</a>.",
       sections: [
         {
           heading: "What Affects Corporate Event Quotes",
@@ -73,7 +73,7 @@ export const BLOG_POSTS: BlogPost[] = [
             "If your communications team needs same-day selects for media distribution or social channels, agree on the exact timing and file quantities before booking so editing can be scheduled.",
             "Check the permitted uses, users, and duration of your commercial photo licence in the quote so all stakeholder and sponsor needs are covered."
           ],
-          callout: "To check live rates for your event duration, use the <a href='/pricing#pricing-builder'>pricing builder</a> to generate an estimate before submitting your brief."
+          callout: "To calculate live rates for your event duration, use the <a href='/pricing#pricing-builder'>interactive rate builder</a> to generate an estimate before submitting your brief."
         },
         {
           heading: "Common Questions on Corporate Event Rates",
@@ -109,14 +109,14 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "icc-sydney-event-photography-guide",
-    title: "Planning Event Photography at ICC Sydney",
-    seoTitle: "ICC Sydney Event Photographer",
-    metaDescription: "Practical guide to photographing conferences, summits, and exhibitions at ICC Sydney in Darling Harbour. Loading dock logistics, lighting, and stage setup.",
+    title: "ICC Sydney Event & Conference Photography Guide",
+    seoTitle: "ICC Sydney Event & Conference Photographer | Darling Harbour",
+    metaDescription: "Guide to conference, summit, and gala photography at ICC Sydney. Logistics for the Grand Ballroom, Pyrmont Theatre, Darling Harbour access and AV lighting.",
     category: "venues",
     categoryLabel: "Venue Production",
     date: "02 August 2026",
     isoDate: "2026-08-02",
-    modifiedDate: "2026-09-14",
+    modifiedDate: "2026-09-19",
     readTime: "2 min read",
     author: "Nikolas Gannon",
     heroImage: "/galleries/posters/echo-change-future-action-summit-2026.webp",
@@ -129,30 +129,30 @@ export const BLOG_POSTS: BlogPost[] = [
           heading: "Commercial Coverage at ICC Sydney",
           body: [
             "We provide <a href='/services/corporate-events-conferences'>corporate event and conference photography</a> across ICC Sydney's convention, exhibition, and theatre spaces. Comprehensive coverage spans plenary keynotes, concurrent panel sessions, exhibition floor activations, awards dinners, and dedicated sponsor areas.",
-            "Whether documenting multi-day summits or evening banquets, coverage is tailored to capture high-impact stage moments, candid delegate engagement, sponsor brand presence, and venue atmosphere without interrupting the flow of your program."
+            "Whether documenting multi-day summits like the <a href='/galleries/echo-change-future-action-summit-2026'>Echo Change Future Action Summit</a> or evening banquets, coverage is tailored to capture high-impact stage moments, candid delegate engagement, sponsor brand presence, and venue atmosphere without interrupting the flow of your program."
           ]
         },
         {
           heading: "Plan Photography Around Your Rooms",
           body: [
             "Different spaces call for different coverage. Include the room names and floor plan in your brief.",
-            "• Grand Ballroom. List important stage moments and any tables or groups that need photos. Allow time for room photos before guests arrive if these matter to you.",
-            "• Exhibition halls. Identify the stands, displays and people you need photographed. Include any demonstrations or scheduled visits.",
-            "• Pyrmont Theatre. Agree suitable positions for photographing the stage and audience, keeping aisles and sightlines clear.",
-            "Use <a href='https://www.iccsydney.com/organisers/organiser-toolkit/floor-plans/'>ICC Sydney's floor plans</a> to identify each room and allow time to move between sessions."
+            "• Grand Ballroom ICC Sydney. The Grand Ballroom accommodates major corporate galas, summit dinners, and awards ceremonies. List critical stage moments and any VIP tables requiring photos. Allow 15 minutes of quiet time for wide architectural room photos before doors open to guests.",
+            "• Exhibition Halls. Identify branded stands, product demonstrations, and sponsor activations. Schedule specific time for sponsor presence documentation while floor activity is peak.",
+            "• Pyrmont Theatre & Plenary Theatres. Agree on discreet shooting positions for stage keynotes, panel discussions, and audience reactions, keeping sightlines clear for delegates.",
+            "Use <a href='https://www.iccsydney.com/organisers/organiser-toolkit/floor-plans/'>ICC Sydney's floor plans</a> to identify each room and allow transition time between sessions."
           ]
         },
         {
           heading: "Confirm Access and Lighting Before the Day",
           body: [
-            "Ask your event contact to confirm the arrival point, access passes, induction requirements and any insurance documents needed.",
-            "Share the lighting plan or put your photographer in touch with the event's AV contact. Let them know about dark presentations, screen content and any restrictions on flash.",
+            "Ask your event contact to confirm the arrival point, dock access passes, induction requirements and any insurance certificates needed.",
+            "Share the AV lighting plan or connect your photographer with the on-site audio-visual team. Confirm screen brightness, ambient wash colours, and whether stage spotlights will be balanced for photography.",
             "Check the current <a href='https://www.iccsydney.com/organisers/organiser-toolkit/'>ICC Sydney organiser toolkit</a> for venue guidance and delivery information."
           ],
-          callout: "If you want photos outside in Darling Harbour, include time for them in the schedule."
+          callout: "If you want photos outside along the Darling Harbour foreshore, allocate 15 to 20 minutes in your run sheet for natural light portraits."
         }
       ],
-      conclusion: "Confirm access, lighting and stage positions before the event so the photographer can work without disrupting the program."
+      conclusion: "Confirm access, lighting and stage positions before the event so the photographer can work seamlessly without disrupting your program."
     },
     relatedGalleries: [
       "echo-change-future-action-summit-2026",
@@ -160,62 +160,61 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     relatedDocSlugs: [
       "sydney-venue-lighting-guide",
+      "sydney-conference-photography-planning-checklist",
       "turnaround-and-delivery-specs"
     ]
   },
   {
     slug: "how-to-write-an-event-photography-brief",
-    title: "How to Write an Event Photography Brief (With Checklist)",
-    seoTitle: "Event Photography Shot List and Brief",
-    metaDescription: "Write a simple event photography brief and shot list covering arrivals, keynote speakers, branding, networking, and delivery needs.",
+    title: "How to Write an Event Photography Brief & Shot List",
+    seoTitle: "Event Photography Shot List & Briefing Checklist Sydney",
+    metaDescription: "Download our Sydney event photography shot list and briefing checklist. Practical templates for arrivals, keynote speakers, awards, sponsor activations and press selects.",
     category: "briefing",
     categoryLabel: "Briefing & Planning",
     date: "22 July 2026",
     isoDate: "2026-07-22",
-    modifiedDate: "2026-09-14",
-    readTime: "2 min read",
+    modifiedDate: "2026-09-19",
+    readTime: "3 min read",
     author: "Nikolas Gannon",
     heroImage: "/galleries/posters/order-of-australia-the-school-of-st-jude.webp",
-    summary: "The details to share with your photographer, from the schedule and shot list to the photos you need most.",
+    summary: "The essential event photography shot list and briefing checklist for Sydney events, from schedule priorities to stakeholder moments.",
     featured: false,
     content: {
-      intro: "A photography brief can be short. Tell us what is happening, where and when, and which photos matter most. An existing run sheet is fine, and anything undecided can stay as TBC.",
+      intro: "A photography brief can be short, but having a clear event photography shot list ensures nothing critical is missed. Tell us what is happening, where and when, and which photos matter most to your stakeholders. An existing run sheet is fine, and anything undecided can stay as TBC.",
       sections: [
         {
           heading: "What to Include in an Event Brief",
           body: [
-            "Start with the dates, venues and requested photography hours. For larger projects, list each day separately and flag sessions happening at the same time in different places.",
-            "Add a short list of the photos you need. Include names, times and reference photos where useful. You can also reference our comprehensive <a href='/docs/event-briefing-template'>event briefing guide</a> for deeper planning.",
-            "Include a contact for planning and someone we can reach on the day. One person can cover both.",
-            "Tell us when you need the photos and how they will be used. Mention venue restrictions or anyone who should not be photographed."
+            "Start with the dates, venues and requested photography hours. For larger projects, list each day separately and flag sessions happening at the same time in different rooms.",
+            "Add a short list of the priority photos you need. Include names, times and reference photos where useful. You can also download our editable <a href='/docs/event-briefing-template'>event briefing template</a> for deeper planning.",
+            "Include a primary contact for planning and an on-site contact we can reach on the day. One person can cover both roles.",
+            "Tell us when you need the photos and how they will be used. Mention venue access constraints or anyone who should not be photographed."
           ]
         },
         {
-          heading: "Event Photography Shot List Essentials",
+          heading: "Master Event Photography Shot List Checklist",
           body: [
-            "A structured shot list ensures key event moments and stakeholder requirements are captured without ambiguity. Core categories often cover these areas.",
-            "• Guest arrivals, registration, and welcome interactions",
-            "• Venue architecture, sponsor signage, stage branding, and room setups before guests enter",
-            "• Keynote speakers, MCs, panel discussions, and stage presentations",
-            "• Audience reactions, attentiveness, and spontaneous engagement",
-            "• Natural delegate networking, conversational exchanges, and cocktail hospitality",
-            "• Formal awards presentations, trophy handovers, and stage lineups",
-            "• Organised VIP groups, executive portraits, and board member photos",
-            "• Event styling details, table arrangements, lighting design, and catering",
-            "• Key stakeholders, patrons, and priority individuals identified in advance",
-            "• Explicit turnaround needs, such as expedited press selects for media releases",
-            "Treat this shot list as a priority guide rather than a rigid instruction to stage every frame. Live events move quickly, and an experienced photographer balances documented shot requirements with authentic, unposed documentary moments."
+            "A structured event photography shot list ensures core stakeholder requirements and brand assets are captured without ambiguity across your schedule.",
+            "• Guest Arrivals & Welcome: Registration desk interactions, delegate name badges, step-and-repeat media wall arrivals, and opening welcome drinks.",
+            "• Venue Architecture & Sponsor Signage: Wide empty-room shots before guest entry, table styling, stage sets, banner signage, and sponsor exhibition booths.",
+            "• Keynotes & Stage Program: MC introductions, keynote presentations, panel discussions, Q&A hand microphones, and slide transitions.",
+            "• Audience Reaction & Engagement: Delegate laughter, attentive listening, applause, and spontaneous room atmosphere.",
+            "• Networking & Social Candids: Natural conversational exchanges, cocktail mingling, team celebrations, and catering service.",
+            "• Formal Presentations & Awards: Trophy handovers, certificate presentations, on-stage recipient pairings, and official winner media portraits.",
+            "• Executive & VIP Groupings: Organised board photos, executive headshots, and sponsor representative lineups scheduled at a designated time.",
+            "• Press & Media Selects: Expedited hero photos for same-day PR distribution or next-day media announcements.",
+            "For evening events and dinners, read our dedicated <a href='/docs/corporate-gala-dinner-photography-shot-list'>corporate gala dinner shot list guide</a> for advice on lighting and timing."
           ]
         },
         {
           heading: "Put the Most Important Photos First",
           body: [
-            "Schedules can change. A short priority list helps your photographer understand what matters if two moments happen at once.",
-            "You do not need an elaborate system. List the people, activities or details you most want photographed and add anything that would be useful to know."
+            "Schedules can change on the day. A short priority hierarchy helps your photographer understand what matters if two moments coincide.",
+            "You do not need an elaborate document. Highlight the VIPs, scheduled announcements, or sponsor deliverables that must be captured, and let your photographer document the surrounding energy naturally."
           ]
         }
       ],
-      conclusion: "Use the editable Word brief if it helps, or send what you already have. We will confirm coverage, cost, delivery and usage before booking."
+      conclusion: "Use the editable Word template if it helps, or send through your existing run sheet. We will confirm coverage, cost, delivery and licensing before booking."
     },
     relatedGalleries: [
       "order-of-australia-the-school-of-st-jude",
@@ -223,6 +222,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     relatedDocSlugs: [
       "event-briefing-template",
+      "corporate-gala-dinner-photography-shot-list",
       "licensing-and-commercial-rights"
     ]
   },
@@ -291,7 +291,7 @@ export const BLOG_POSTS: BlogPost[] = [
     summary: "How to plan staff photos around your workplace, schedule and the look you need.",
     featured: false,
     content: {
-      intro: "Workplace headshot sessions usually take 1–3 hours, depending on team size. Start with how many people need photos and a date that suits the team. Share existing staff photos if the new ones need to match.",
+      intro: "Workplace headshot sessions usually take 1 to 3 hours, depending on team size. Start with how many people need photos and a date that suits the team. Share existing staff photos if the new ones need to match.",
       sections: [
         {
           heading: "Choose a Background",

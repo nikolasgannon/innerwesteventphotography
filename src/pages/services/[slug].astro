@@ -14,7 +14,7 @@ import {
   getServiceBySlug,
   type ServicePackage,
 } from "@/data/services.ts";
-import { GALLERIES } from "@/data/galleries.ts";
+import { GALLERIES, GALLERY_CATEGORIES } from "@/data/galleries.ts";
 import { DOCS } from "@/data/docs.ts";
 import { LOCATIONS } from "@/data/locations.ts";
 
@@ -40,6 +40,9 @@ if (!service) {
 // Related case studies
 const matchedGalleries = GALLERIES.filter((g) =>
   service.relatedGallerySlugs.includes(g.slug),
+);
+const matchedCategory = GALLERY_CATEGORIES.find(
+  (c) => c.matchedServiceSlug === service.slug,
 );
 const planningGuides = DOCS.filter(
   (guide) => guide.relatedService === service.slug,
@@ -226,8 +229,12 @@ const breadcrumbSchema = {
             </Heading>
           </div>
           <ButtonWrapper slot="column2">
-            <Button element="link" href="/galleries" emphasis="secondary">
-              View All Galleries &rarr;
+            <Button
+              element="link"
+              href={matchedCategory ? `/galleries/category/${matchedCategory.slug}` : "/galleries"}
+              emphasis="secondary"
+            >
+              {matchedCategory ? `${matchedCategory.shortName} Case Studies \u2192` : "View All Galleries \u2192"}
             </Button>
           </ButtonWrapper>
         </ContentWrapper>

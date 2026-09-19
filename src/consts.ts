@@ -25,6 +25,8 @@ export const STUDIO_CONTACT = {
   formEndpoint: "https://formspree.io/p/3077221597631741747/f/projectInquiry",
   formProjectId: "3077221597631741747",
   formId: "projectInquiry",
+  eventBriefEndpoint: "https://formspree.io/p/3077221597631741747/f/eventBrief",
+  eventBriefFormId: "eventBrief",
   phone: "+61 437 700 749",
   phoneRaw: "+61437700749",
   whatsappUrl: "https://wa.me/61437700749",
@@ -62,8 +64,9 @@ export const HUBSPOT_CONFIG = {
  */
 export const NOINDEX_ROUTES: string[] = [
   "/404",
-  "/docs",
+  "/event-brief",
   "/example-components",
   "/projects",
   "/quote-builder",
 ];
+

@@ -13,7 +13,7 @@ import {
 } from "@/data/gallery-covers";
 import ButtonWrapper from "@/components/Wrapper/ButtonWrapper.astro";
 import Button from "@/components/Button.astro";
-import { GALLERIES } from "@/data/galleries.ts";
+import { GALLERIES, GALLERY_CATEGORIES } from "@/data/galleries.ts";
 
 const featuredGallery =
   GALLERIES.find((gallery) => gallery.slug === "sony-foundation-wharf4ward") ??
@@ -35,6 +35,20 @@ const remainingGalleries = GALLERIES.filter(
         Corporate, not-for-profit, fashion, weddings, celebrations, concerts,
         and sports photography across Sydney.
       </Paragraph>
+
+      <ButtonWrapper marginTop="4">
+        {
+          GALLERY_CATEGORIES.map((category) => (
+            <Button
+              element="link"
+              href={`/galleries/category/${category.slug}`}
+              emphasis="secondary"
+            >
+              {category.shortName}
+            </Button>
+          ))
+        }
+      </ButtonWrapper>
     </ContentWrapper>
   </Section>
 

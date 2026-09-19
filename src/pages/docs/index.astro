@@ -11,6 +11,8 @@ import ButtonWrapper from "@/components/Wrapper/ButtonWrapper.astro";
 import Button from "@/components/Button.astro";
 import { DOCS } from "@/data/docs.ts";
 
+import { SITE_URL } from "@/consts.ts";
+
 const categoryOrder = [
   ["briefing", "Briefing and production planning"],
   ["pricing", "Pricing and scoping"],
@@ -18,12 +20,33 @@ const categoryOrder = [
   ["licensing", "Licensing and usage"],
   ["venues", "Venue production"],
 ] as const;
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "Docs and guides",
+      item: `${SITE_URL}/docs`,
+    },
+  ],
+};
 ---
 
 <Layout
   title="Event Photography Production Docs & Guides | Inner West Event Photography"
   description="Technical documentation, briefing templates, pricing rate benchmarks, and licensing specifications for Sydney event managers and marketing directors."
 >
+  <Fragment slot="head">
+    <script
+      type="application/ld+json"
+      is:inline
+      set:html={JSON.stringify(breadcrumbSchema)}
+    />
+  </Fragment>
   <Section paddingTop="medium" paddingBottom="small">
     <ContentWrapper>
       <Eyebrow variant="tag">KNOWLEDGE BASE & PRODUCTION DOCS</Eyebrow>

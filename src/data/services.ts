@@ -77,7 +77,7 @@ export const SERVICES: ServicePackage[] = [
       "Full commercial & editorial licence in perpetuity",
       "High-resolution print files and web-optimised formats",
     ],
-    turnaroundStandard: "Standard curated delivery within 3–5 business days.",
+    turnaroundStandard: "Standard curated delivery within 3 to 5 business days.",
     turnaroundFast: "Next-day priority highlights or live same-day PR delivery available upon request.",
     relatedGallerySlugs: [
       "tedx-macquarie-uni",
@@ -94,15 +94,15 @@ export const SERVICES: ServicePackage[] = [
   {
     slug: "not-for-profit-community",
     number: "02",
-    title: "Not-For-Profit, Charity & Community Events",
-    subtitle: "Charity Galas, Fundraisers, Community Festivals & Forums",
+    title: "Charity Event Photographer Sydney",
+    subtitle: "Fundraising Galas, Foundation Dinners, Community Festivals & Forums",
     seoTitle: "Charity Event Photographer Sydney | Not-For-Profit & Community",
     metaDescription:
       "Sydney charity event photographer for fundraising galas, foundation dinners, community festivals and advocacy forums. Professional coverage with a 10% Community Courtesy Benefit.",
     tagline:
-      "Photography for charity galas, fundraising dinners, community festivals, cultural events and advocacy forums across Sydney.",
+      "Specialist photography for charity galas, fundraising dinners, community festivals, cultural events and advocacy forums across Sydney.",
     summary:
-      "Photographic coverage for speakers, donors, patrons, volunteers and guests with clear consent protocols, dignity, and a dedicated 10% Community Courtesy Benefit.",
+      "Photographic coverage for speakers, donors, patrons, volunteers and guests with clear consent protocols, dignity, and a dedicated 10% Community Courtesy Benefit applied to registered charities.",
     commissioners: [
       "Not-for-profit communications & program leads",
       "Charitable foundations & fundraising directors",
@@ -273,7 +273,7 @@ export const SERVICES: ServicePackage[] = [
       "Private online gallery with unlimited high-res downloads",
       "Full personal printing and sharing licence",
     ],
-    turnaroundStandard: "Delivery within 3–5 business days.",
+    turnaroundStandard: "Delivery within 3 to 5 business days.",
     turnaroundFast: "Next-day highlights available upon request.",
     relatedGallerySlugs: [
       "annas-birthday",
@@ -335,8 +335,8 @@ export const SERVICES: ServicePackage[] = [
       "Full personal print and sharing licence in perpetuity",
       "Web-optimised digital gallery for effortless mobile viewing",
     ],
-    turnaroundStandard: "Full curated wedding gallery delivered within 2–3 weeks.",
-    turnaroundFast: "Next-day sneak peek hero highlights (20–30 images) delivered within 24 hours.",
+    turnaroundStandard: "Full curated wedding gallery delivered within 2 to 3 weeks.",
+    turnaroundFast: "Next-day sneak peek hero highlights (20 to 30 images) delivered within 24 hours.",
     relatedGallerySlugs: [
       "george-and-adrianas-engagement",
     ],
@@ -355,9 +355,9 @@ export const SERVICES: ServicePackage[] = [
     metaDescription:
       "Sydney brand activation photographer for launches, pop-ups, sponsor experiences and experiential events. Campaign-ready images with fast delivery available.",
     tagline:
-      "Sydney brand activation photographer for launches, pop-ups, sponsor experiences and experiential events. Campaign-ready images with fast delivery available.",
+      "Specialist photography for brand activations, experiential pop-ups, product launches and sponsor experiences across Sydney.",
     summary:
-      "Specialist photographic coverage for brand activations, commercial pop-ups, retail experiences, and sponsor activations across Sydney. We capture genuine audience engagement, custom architectural builds, product details, and key talent with publication-grade clarity.",
+      "Specialist photographic coverage for brand activations, commercial pop-ups, retail experiences and sponsor installations across Sydney. We partner directly with brand marketing teams and experiential agencies to document visitor engagement, custom architectural builds, product details and key talent with publication-grade clarity.",
     commissioners: [
       "Brand marketing managers & campaign directors",
       "Experiential marketing agencies & event producers",
@@ -405,7 +405,7 @@ export const SERVICES: ServicePackage[] = [
       "Private digital gallery for agency and brand stakeholders",
       "Priority turnaround selects when pre-scheduled",
     ],
-    turnaroundStandard: "Standard curated delivery within 3–5 business days.",
+    turnaroundStandard: "Standard curated delivery within 3 to 5 business days.",
     turnaroundFast:
       "Next-day priority highlights or live same-day PR delivery available when scoped prior to the event.",
     relatedGallerySlugs: [

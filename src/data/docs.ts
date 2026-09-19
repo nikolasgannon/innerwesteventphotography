@@ -381,7 +381,7 @@ export const DOCS: DocGuide[] = [
         subsections: [
           {
             title: "Podium & Stage White Light Balancing",
-            body: "Requesting neutral 4500K–5600K white light on speakers' faces rather than saturated coloured washes ensures clean, flattering portrait results.",
+            body: "Requesting neutral 4500K to 5600K white light on speakers' faces rather than saturated coloured washes ensures clean, flattering portrait results.",
           },
           {
             title: "House Light Dimming Cues",
@@ -391,7 +391,7 @@ export const DOCS: DocGuide[] = [
       },
     ],
     keyTakeaways: [
-      "Use fast prime lenses (f/1.4–f/2.8) to shoot in low-light environments without harsh direct flash.",
+      "Use fast prime lenses (f/1.4 to f/2.8) to shoot in low-light environments without harsh direct flash.",
       "Coordinate with AV lighting techs for neutral white light on key speakers.",
       "Silent electronic shutters eliminate camera click distraction during keynotes.",
       "Carry off-camera lighting for dark ballrooms and evening networking.",
@@ -785,7 +785,7 @@ export const DOCS: DocGuide[] = [
     lastUpdated: "August 2026",
     readTime: "6 min read",
     summary:
-      "Workplace headshot sessions usually take 1–3 hours, depending on team size. Share how many people need photos so we can confirm the time and price.",
+      "Workplace headshot sessions usually take 1 to 3 hours, depending on team size. Share how many people need photos so we can confirm the time and price.",
     searchIntent: "planning",
     seoTitle: "On-Site Corporate Headshots Planning Guide Sydney",
     metaDescription:
@@ -979,7 +979,7 @@ export const DOCS: DocGuide[] = [
         subsections: [
           {
             title: "Guest Arrivals & Atmosphere",
-            body: "Documenting guests arriving, greeting the host, and experiencing the styled venue atmosphere during the first 30–45 minutes.",
+            body: "Documenting guests arriving, greeting the host, and experiencing the styled venue atmosphere during the first 30 to 45 minutes.",
           },
           {
             title: "Speeches, Toasts & Cake Cutting",
